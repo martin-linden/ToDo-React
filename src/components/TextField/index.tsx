@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './styles';
 
 export default ({
 	value,
@@ -9,6 +10,7 @@ export default ({
 }) => {
 	return (
 		<input
+			style={styles}
 			value={value}
 			onChange={(event) => onChange(event.target.value)}
 		/>

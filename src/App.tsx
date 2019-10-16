@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import Button from './components/Button';
-import TextField from './components/TextField';
+import Button from './components/Button/';
+import TextField from './components/TextField/';
+import List from './components/List';
 
 const App: React.FC = () => {
 	// Håller state för vår todo-lista,
@@ -29,7 +30,7 @@ const App: React.FC = () => {
 		<div className="App">
 			<TextField value={textField} onChange={setTextField} />
 			<Button onClick={handleClick} />
-			<ul>{todos.map((todo) => <li>{todo}</li>)}</ul>
+			<List todos={todos} />
 		</div>
 	);
 };
