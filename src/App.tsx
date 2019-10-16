@@ -18,9 +18,7 @@ const App: React.FC = () => {
 
   // En funktion som hanterar knapptryckningen
   const handleClick = () => {
-    if (textField == "" || !textField) {
-      return;
-    }
+    if (textField == "" || !textField) return;
     setTodos([...todos, textField]);
     setTextField("");
   };
